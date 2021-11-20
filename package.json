@@ -1,19 +1,15 @@
 {
   "name": "react-draggg",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0-alpha.1",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "tsc"
   },
-  "dependencies": {
-    "next": "12.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
+  "author": "Jang Haemin <io@jhaemin.com>",
+  "license": "MIT",
   "devDependencies": {
-    "@types/react": "17.0.35",
-    "typescript": "4.5.2"
+    "@types/react": "^17.0.35",
+    "react": "^17.0.2"
   }
 }
