@@ -9,7 +9,9 @@
   "author": "Jang Haemin <io@jhaemin.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^17.0.35",
+    "@types/react": "^17.0.35"
+  },
+  "peerDependencies": {
     "react": "^17.0.2"
   }
 }
