@@ -46,9 +46,7 @@ export type DraggableProps = {
   onStart?: DraggableCallback
   onEnd?: DraggableCallback
   /**
-   * Used as an initial x, y when drag start.
-   * Even if you pass a state value and change it,
-   * never affects until the next drag start.
+   * The initial x, y on every drag start.
    */
   basePosition?: { x: number; y: number }
 }
