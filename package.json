@@ -2,7 +2,7 @@
   "name": "react-draggg",
   "version": "1.0.0-alpha.1",
   "description": "",
-  "main": "Draggable.js",
+  "main": "Draggg.js",
   "scripts": {
     "build": "node build.mjs"
   },

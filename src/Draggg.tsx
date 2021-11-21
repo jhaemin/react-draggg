@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 
-export const isTouchScreen =
+const isTouchScreen =
   typeof window !== 'undefined' &&
   window.matchMedia('(pointer: coarse)').matches
 
@@ -17,7 +17,7 @@ const getScreenDistance = (
   return (e as MouseEvent)[direction]
 }
 
-export type DraggableData = {
+export type DragggData = {
   /**
    * Updated x-axis position based on the given `basePosition`.
    * If you don't pass anything to `basePosition`, it is same as `deltaX`.
@@ -38,20 +38,20 @@ export type DraggableData = {
   deltaY: number
 }
 
-export type DraggableCallback = (data: DraggableData) => void
+export type DragggCallback = (data: DragggData) => void
 
-export type DraggableProps = {
+export type DragggProps = {
   stopPropagation?: boolean
-  onDrag?: DraggableCallback
-  onStart?: DraggableCallback
-  onEnd?: DraggableCallback
+  onDrag?: DragggCallback
+  onStart?: DragggCallback
+  onEnd?: DragggCallback
   /**
    * The initial x, y on every drag start.
    */
   basePosition?: { x: number; y: number }
 }
 
-const Draggable: React.FC<DraggableProps> = ({
+const Draggg: React.FC<DragggProps> = ({
   children,
   stopPropagation,
   onDrag,
@@ -157,11 +157,11 @@ const Draggable: React.FC<DraggableProps> = ({
       })
     )
   } catch (error) {
-    console.error('[Draggable] You should pass a single child component.')
+    console.error('[Draggg] You should pass a single child component.')
     return <>{children}</>
   }
 
   return <>{clonedChildren}</>
 }
 
-export default Draggable
+export default Draggg
