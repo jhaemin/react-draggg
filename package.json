@@ -2,9 +2,9 @@
   "name": "react-draggg",
   "version": "1.0.0-alpha.1",
   "description": "",
-  "main": "index.js",
+  "main": "Draggable.js",
   "scripts": {
-    "build": "tsc"
+    "build": "node build.mjs"
   },
   "author": "Jang Haemin <io@jhaemin.com>",
   "license": "MIT",
