@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export && touch out/.nojekyll",
+    "deploy:demo": "npm run export && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "framework7-icons-plus": "^1.7.0",
