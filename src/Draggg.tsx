@@ -24,7 +24,7 @@ export type DragggData = {
    */
   x: number
   /**
-   * Updated y-axis position based on the given base position.
+   * Updated y-axis position based on the given `basePosition`.
    * If you don't pass anything to `basePosition`, it is same as `deltaY`.
    */
   y: number
