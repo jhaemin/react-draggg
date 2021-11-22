@@ -12,7 +12,8 @@
     "@types/node": "^16.11.9",
     "@types/react": "^17.0.35",
     "app-root-path": "^3.0.0",
-    "consola": "^2.15.3"
+    "consola": "^2.15.3",
+    "gh-pages": "^3.2.3"
   },
   "peerDependencies": {
     "react": "^17.0.2"
