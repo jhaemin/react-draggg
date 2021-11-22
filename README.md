@@ -1,6 +1,8 @@
-# React Draggg
+# React Dragggggggggggggggggg
 
 Make your React elements draggable.
+
+![Screen Recording 2021-11-22 at 10 50 10 AM](https://user-images.githubusercontent.com/19797697/142789473-4aeb72f7-3aa2-4311-abb7-73dbf63f037c.gif)
 
 ### Installation
 
@@ -31,7 +33,26 @@ const Page = () => {
     </div>
   )
 }
+
+// Alternative usage (with basePosition)
+const Page = () => {
+  const [{ x, y }, setPosition] = useState({ x: 0, y: 0 })
+
+  const onDrag = ({ x, y }) => setPosition({ x, y })
+
+  return (
+    <div className="page">
+      <Draggg basePosition={{ x, y }} onDrag={onDrag}>
+        <div style={{ left: x, top: y }}>Drag Me</div>
+      </Draggg>
+    </div>
+  )
+}
 ```
+
+### How it works?
+
+It simply remembers the initial position when drag starts, then calculate the distance from the original position.
 
 ## API
 
@@ -43,7 +64,7 @@ export type DragggData = {
    */
   x: number
   /**
-   * Updated y-axis position based on the given base position.
+   * Updated y-axis position based on the given `basePosition`.
    * If you don't pass anything to `basePosition`, it is same as `deltaY`.
    */
   y: number
@@ -73,7 +94,12 @@ export type DragggProps = {
 
 ## Comparison with [React-Draggable](https://github.com/react-grid-layout/react-draggable)
 
-- Draggg has a simpler API
-- **Draggg can correctly stop touch event propagation**
-- Draggg doesn't have its own state (it works like React-Draggable's `DraggableCore`)
-- Draggg doesn't expose the event objects which means you don't have full control over the events
+- React Draggg has a simpler API
+- React Draggg is batteries-not-included
+- **React Draggg can correctly stop touch event propagation**
+- React Draggg doesn't have its own state (it works like React-Draggable's `DraggableCore`)
+- React Draggg doesn't expose the event objects which means you don't have full control over the events
+
+## License
+
+MIT
