@@ -4,6 +4,8 @@ Make your React elements draggable.
 
 ![Screen Recording 2021-11-22 at 10 50 10 AM](https://user-images.githubusercontent.com/19797697/142789473-4aeb72f7-3aa2-4311-abb7-73dbf63f037c.gif)
 
+[Demo](https://jhaemin.github.io/react-draggg/)
+
 ### Installation
 
 ```zsh
