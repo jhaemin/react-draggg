@@ -104,4 +104,4 @@ export type DragggProps = {
 
 ## License
 
-MIT
+[MIT](https://github.com/jhaemin/react-draggg/blob/main/LICENSE)
