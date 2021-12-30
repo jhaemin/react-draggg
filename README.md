@@ -98,7 +98,7 @@ export type DragggProps = {
 
 - React Draggg has a simpler API
 - React Draggg is batteries-not-included
-- **React Draggg can correctly stop touch event propagation**
+- **React Draggg correctly stops touch event propagation**
 - React Draggg doesn't have its own state (it works like React-Draggable's `DraggableCore`)
 - React Draggg doesn't expose the event objects which means you don't have full control over the events
 
