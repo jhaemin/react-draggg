@@ -54,7 +54,7 @@ const Page = () => {
 
 ### How it works?
 
-It simply remembers the initial position when drag starts, then calculate the distance from the original position.
+It simply remembers the initial position when drag starts, then calculates the distance from the original position.
 
 ## API
 
